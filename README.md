@@ -39,3 +39,6 @@ a_ij = tf.nn.softmax(e_ij, axis=0)  # (N,1)
 context_vec =  tf.einsum('ij,ik->ik', a_ij, features_i)  # (N,1) (NxF')
 h = tf.nn.sigmoid(context_vec, name='attention_coefficient')
 ```
+
+##### Explanation of GAT in Korean
+Go To : https://analytics4everything.tistory.com/165
